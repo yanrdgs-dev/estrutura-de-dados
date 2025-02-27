@@ -11,3 +11,20 @@ Quero conseguir construir os algoritmos em 3 linguagens diferentes, para solidif
 
 ## 📂 Estrutura do Repositório
 Dentro de cada pasta desse repositório (ex: `binary-search`, `linear-search`) existe 3 implementações daquele algoritmo em específico.
+
+## 💻 Como Rodar?
+
+Para os arquivos em C, é necessário ter o gcc instalado. Após isso, rode:
+```bash
+gcc algorithms/<caminho-do-algoritmo>/<algoritmo.c> -o <nome-do-arquivo>
+```
+
+Para os arquivos em Python, é necessário ter o Python instalado. Então, rode:
+```bash
+python3 algorithms/<caminho-do-algoritmo>/<algoritmo.py>
+```
+
+Para os arquivos em TypeScript, é necessário ter o Node.JS instalado. Rode:
+```bash
+tsc algorithms/<caminho-do-algoritmo>/<algoritmo.ts> && node <algoritmo.js>
+```
