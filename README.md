@@ -3,6 +3,6 @@ Nesse repositório, planejo manter guardado os estudos e conteúdos de ED1, tant
 
 ## Ideia inicial
 Quero conseguir construir os algoritmos em 3 linguagens diferentes, para solidificar o conhecimento:
-- C
-- Python
-- TypeScript
+- C [![My Skills](https://skillicons.dev/icons?i=c)](https://skillicons.dev)
+- Python [![My Skills](https://skillicons.dev/icons?i=py)](https://skillicons.dev)
+- TypeScript [![My Skills](https://skillicons.dev/icons?i=ts)](https://skillicons.dev)
