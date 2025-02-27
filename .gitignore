@@ -1,0 +1,6 @@
+# Typescript
+*.js
+
+# Executáveis do C
+linear
+binary
