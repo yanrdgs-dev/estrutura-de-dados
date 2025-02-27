@@ -2,7 +2,7 @@
 Nesse repositório, planejo manter guardado os estudos e conteúdos de ED1, tanto em sala de aula quanto fora. Aqui, estarão principalmente os códigos para as estruturas de dados e para os algoritmos relacionados.
 
 ## 💡 Ideia inicial
-<div align=center>[![My Skills](https://skillicons.dev/icons?i=c,py,ts)](https://skillicons.dev)</div> \
+<div align=center><img src="./icons/C.svg"> <img src="./icons/Python-Dark.svg"> <img src="./icons/TypeScript.svg"></div>
 
 Quero conseguir construir os algoritmos em 3 linguagens diferentes, para solidificar o conhecimento (tanto dos algoritmos, quanto das linguagens):
 - O **C** foi escolhido por ser uma linguagem de baixo nível, permitindo entender profundamente como **ponteiros, alocação de memória e estruturas de dados** funcionam na prática. Além disso, a eficiência do C em tempo de execução ajuda a analisar a complexidade e o desempenho dos algoritmos.  
