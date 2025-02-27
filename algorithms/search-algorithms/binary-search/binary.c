@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
-int binary_search (int arr[], int lo, int hi, int target) {
+int binary_search (int arr[], int hi, int target) {
+    int lo = 0;
     while (lo <= hi) {
         int mid = floor((hi + lo) / 2);
         int value = arr[mid];
@@ -27,10 +28,10 @@ int main(void) {
     int target_test_2 = 7;
 
     printf("---- Teste 1 ----\n");
-    int result_1 = binary_search(arr_test_1, 0, size_arr - 1, target_test_1);
+    int result_1 = binary_search(arr_test_1, size_arr - 1, target_test_1);
     printf("%d\n", result_1);
     printf("---- Teste 2 ----\n");
-    int result_2 = binary_search(arr_test_2, 0, size_arr - 1, target_test_2); 
+    int result_2 = binary_search(arr_test_2, size_arr - 1, target_test_2); 
     printf("%d\n", result_2);
 
     return 0;
