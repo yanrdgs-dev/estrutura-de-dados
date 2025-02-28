@@ -19,7 +19,7 @@ Para os arquivos em **C**, é necessário ter o *GCC* instalado. Após isso, rod
 cd algorithms/<caminho-do-algoritmo>
 ```
 ```bash
-gcc algoritmo.c -o <nome-do-arquivo> && ./binary
+gcc algoritmo.c -o <nome-do-arquivo> && ./<nome-do-arquivo>
 ```
 
 Para os arquivos em **Python**, é necessário ter o *Python* instalado. Então, rode:
