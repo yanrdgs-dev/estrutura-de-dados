@@ -6,26 +6,29 @@ void merge (int *v, int e, int m, int d) {
 
     int i = e; // declara indices p poder manipular
     int j = m + 1;
-    int k = e;
+    int k = 0;
+
+    // todos os acessos de aux devem ser aux[k - e], para corrigir os índices
+    // no caso do subvetor começar de um índice mais avançado do que 0, ex: e = 3 -> aux[k - 3] -> aux[3 - 3] -> aux 
 
     while (i <= m && j <= d) { // enquanto nenhuma das duas metades já foi iterada ou de (e..m) ou de (m+1..d)
         if (v[i] <= v[j]) { // se v[i] for menor ou igual a v[j] (<= mantém a ordem, algoritmo estavel),
-            aux[k - e] = v[i]; // o v[k], ou seja, o indice k do v vira o v[i]
+            aux[k] = v[i]; // o v[k], ou seja, o indice k do v vira o v[i]
             i++; // incrementa o i pq passou por ele já
         } else {
-            aux[k - e] = v[j]; // indice k do v vira o v[j]
+            aux[k] = v[j]; // indice k do v vira o v[j]
             j++; // incrementa o j, idem
         }
         k++; // incrementa o k no final pois significa que aquela posição já ta ordenada
     }
 
     while (i <= m) { // se entra nisso significa q a segunda metade foi toda iterada primeiro, então ainda falta elemento da primeira
-        aux[k - e] = v[i];
+        aux[k] = v[i];
         k++, i++;
     }
     
     while (j <= d) { // idem: linha 26 porem ao contrario
-        aux[k - e] = v[j];
+        aux[k] = v[j];
         k++, j++;
     }
 
@@ -62,16 +65,18 @@ int main(void) {
     printf("\n");
 
     printf("Vetor v antes de ordenar: \n");
+    printf("[ ");
     for (int i = 0; i < n; i++) {
-        printf("v[%d]: %d ", i, v[i]);
+        printf("%d ", v[i]);
     }
-    printf("\n");
+    printf("]\n");
 
     mergesort(v, 0, n - 1);
 
     printf("Vetor v ordenado: \n");
+    printf("[ ");
     for (int i = 0; i < n; i++) {
-        printf("v[%d]: %d ", i, v[i]);
+        printf("%d ", v[i]);
     }
-    printf("\n");
+    printf("]\n");
 }
