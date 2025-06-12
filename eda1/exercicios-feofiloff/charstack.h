@@ -6,7 +6,7 @@
 
 typedef struct stack {
     int t, cap;
-    char *v;
+    char *data;
 } stack_t;
 
 stack_t *create_stack(int cap);
@@ -20,5 +20,7 @@ char peek(stack_t *stack);
 int is_full(stack_t *stack);
 
 int is_empty(stack_t *stack);
+
+void free_stack(stack_t *stack);
 
 #endif
